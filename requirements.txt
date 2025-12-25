@@ -1,0 +1,5 @@
+lightrag-hku
+ipykernel
+ipywidgets
+python-dotenv
+uv
