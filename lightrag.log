@@ -1,0 +1,181 @@
+2025-12-29 17:53:30,225 - lightrag - INFO - PostgreSQL table: LIGHTRAG_VDB_ENTITY_models_text_embedding_004_768d
+2025-12-29 17:53:30,226 - lightrag - INFO - PostgreSQL table: LIGHTRAG_VDB_RELATION_models_text_embedding_004_768d
+2025-12-29 17:53:30,226 - lightrag - INFO - PostgreSQL table: LIGHTRAG_VDB_CHUNKS_models_text_embedding_004_768d
+2025-12-29 17:53:30,227 - lightrag - INFO - PostgreSQL, Retry config: attempts=3, backoff=0.5s, backoff_max=5.0s, pool_close_timeout=5.0s
+2025-12-29 17:53:30,306 - lightrag - INFO - PostgreSQL, VECTOR extension enabled
+2025-12-29 17:53:30,401 - lightrag - INFO - PostgreSQL, Connected to database at localhost:5432/ai without SSL
+2025-12-29 17:53:30,404 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_doc_full" does not exist
+2025-12-29 17:53:30,404 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_DOC_FULL in database
+2025-12-29 17:53:30,412 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_DOC_FULL in PostgreSQL database
+2025-12-29 17:53:30,415 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_doc_chunks" does not exist
+2025-12-29 17:53:30,416 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_DOC_CHUNKS in database
+2025-12-29 17:53:30,422 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_DOC_CHUNKS in PostgreSQL database
+2025-12-29 17:53:30,425 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_llm_cache" does not exist
+2025-12-29 17:53:30,426 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_LLM_CACHE in database
+2025-12-29 17:53:30,433 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_LLM_CACHE in PostgreSQL database
+2025-12-29 17:53:30,437 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_doc_status" does not exist
+2025-12-29 17:53:30,438 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_DOC_STATUS in database
+2025-12-29 17:53:30,444 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_DOC_STATUS in PostgreSQL database
+2025-12-29 17:53:30,447 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_full_entities" does not exist
+2025-12-29 17:53:30,447 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_FULL_ENTITIES in database
+2025-12-29 17:53:30,454 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_FULL_ENTITIES in PostgreSQL database
+2025-12-29 17:53:30,456 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_full_relations" does not exist
+2025-12-29 17:53:30,457 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_FULL_RELATIONS in database
+2025-12-29 17:53:30,463 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_FULL_RELATIONS in PostgreSQL database
+2025-12-29 17:53:30,466 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_entity_chunks" does not exist
+2025-12-29 17:53:30,466 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_ENTITY_CHUNKS in database
+2025-12-29 17:53:30,473 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_ENTITY_CHUNKS in PostgreSQL database
+2025-12-29 17:53:30,476 - lightrag - ERROR - PostgreSQL database, error:relation "lightrag_relation_chunks" does not exist
+2025-12-29 17:53:30,477 - lightrag - INFO - PostgreSQL, Try Creating table LIGHTRAG_RELATION_CHUNKS in database
+2025-12-29 17:53:30,485 - lightrag - INFO - PostgreSQL, Creation success table LIGHTRAG_RELATION_CHUNKS in PostgreSQL database
+2025-12-29 17:53:30,512 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_doc_full_id on table LIGHTRAG_DOC_FULL
+2025-12-29 17:53:30,517 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_doc_full_workspace_id on table LIGHTRAG_DOC_FULL
+2025-12-29 17:53:30,520 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_doc_chunks_id on table LIGHTRAG_DOC_CHUNKS
+2025-12-29 17:53:30,523 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_doc_chunks_workspace_id on table LIGHTRAG_DOC_CHUNKS
+2025-12-29 17:53:30,527 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_llm_cache_id on table LIGHTRAG_LLM_CACHE
+2025-12-29 17:53:30,532 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_llm_cache_workspace_id on table LIGHTRAG_LLM_CACHE
+2025-12-29 17:53:30,539 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_doc_status_id on table LIGHTRAG_DOC_STATUS
+2025-12-29 17:53:30,546 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_doc_status_workspace_id on table LIGHTRAG_DOC_STATUS
+2025-12-29 17:53:30,550 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_full_entities_id on table LIGHTRAG_FULL_ENTITIES
+2025-12-29 17:53:30,555 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_full_entities_workspace_id on table LIGHTRAG_FULL_ENTITIES
+2025-12-29 17:53:30,558 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_full_relations_id on table LIGHTRAG_FULL_RELATIONS
+2025-12-29 17:53:30,563 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_full_relations_workspace_id on table LIGHTRAG_FULL_RELATIONS
+2025-12-29 17:53:30,567 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_entity_chunks_id on table LIGHTRAG_ENTITY_CHUNKS
+2025-12-29 17:53:30,571 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_entity_chunks_workspace_id on table LIGHTRAG_ENTITY_CHUNKS
+2025-12-29 17:53:30,574 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_relation_chunks_id on table LIGHTRAG_RELATION_CHUNKS
+2025-12-29 17:53:30,578 - lightrag - INFO - PostgreSQL, Creating composite index idx_lightrag_relation_chunks_workspace_id on table LIGHTRAG_RELATION_CHUNKS
+2025-12-29 17:53:30,612 - lightrag - INFO - chunk_id column already exists in LIGHTRAG_LLM_CACHE table
+2025-12-29 17:53:30,613 - lightrag - INFO - cache_type column already exists in LIGHTRAG_LLM_CACHE table
+2025-12-29 17:53:30,613 - lightrag - INFO - queryparam column already exists in LIGHTRAG_LLM_CACHE table
+2025-12-29 17:53:30,613 - lightrag - INFO - mode column does not exist in LIGHTRAG_LLM_CACHE table
+2025-12-29 17:53:30,629 - lightrag - INFO - chunks_list column already exists in LIGHTRAG_DOC_STATUS table
+2025-12-29 17:53:30,636 - lightrag - INFO - llm_cache_list column already exists in LIGHTRAG_DOC_CHUNKS table
+2025-12-29 17:53:30,658 - lightrag - INFO - track_id column already exists in LIGHTRAG_DOC_STATUS table
+2025-12-29 17:53:30,661 - lightrag - INFO - Creating index on track_id column for LIGHTRAG_DOC_STATUS table
+2025-12-29 17:53:30,665 - lightrag - INFO - Successfully created index on track_id column for LIGHTRAG_DOC_STATUS table
+2025-12-29 17:53:30,673 - lightrag - INFO - metadata column already exists in LIGHTRAG_DOC_STATUS table
+2025-12-29 17:53:30,681 - lightrag - INFO - error_msg column already exists in LIGHTRAG_DOC_STATUS table
+2025-12-29 17:53:30,685 - lightrag - INFO - Creating pagination index: Composite index for workspace + status + updated_at pagination
+2025-12-29 17:53:30,691 - lightrag - INFO - Successfully created index: idx_lightrag_doc_status_workspace_status_updated_at
+2025-12-29 17:53:30,695 - lightrag - INFO - Creating pagination index: Composite index for workspace + status + created_at pagination
+2025-12-29 17:53:30,701 - lightrag - INFO - Successfully created index: idx_lightrag_doc_status_workspace_status_created_at
+2025-12-29 17:53:30,704 - lightrag - INFO - Creating pagination index: Index for workspace + updated_at pagination (all statuses)
+2025-12-29 17:53:30,711 - lightrag - INFO - Successfully created index: idx_lightrag_doc_status_workspace_updated_at
+2025-12-29 17:53:30,714 - lightrag - INFO - Creating pagination index: Index for workspace + created_at pagination (all statuses)
+2025-12-29 17:53:30,721 - lightrag - INFO - Successfully created index: idx_lightrag_doc_status_workspace_created_at
+2025-12-29 17:53:30,726 - lightrag - INFO - Creating pagination index: Index for workspace + file_path sorting
+2025-12-29 17:53:30,732 - lightrag - INFO - Successfully created index: idx_lightrag_doc_status_workspace_file_path
+2025-12-29 17:53:30,736 - lightrag - INFO - Creating table LIGHTRAG_FULL_ENTITIES
+2025-12-29 17:53:30,738 - lightrag - ERROR - PostgreSQL database,
+sql:CREATE TABLE LIGHTRAG_FULL_ENTITIES (
+                    id VARCHAR(255),
+                    workspace VARCHAR(255),
+                    entity_names JSONB,
+                    count INTEGER,
+                    create_time TIMESTAMP(0) DEFAULT CURRENT_TIMESTAMP,
+                    update_time TIMESTAMP(0) DEFAULT CURRENT_TIMESTAMP,
+                    CONSTRAINT LIGHTRAG_FULL_ENTITIES_PK PRIMARY KEY (workspace, id)
+                    ),
+data:None,
+error:relation "lightrag_full_entities" already exists
+2025-12-29 17:53:30,739 - lightrag - ERROR - Failed to create table LIGHTRAG_FULL_ENTITIES: relation "lightrag_full_entities" already exists
+2025-12-29 17:53:30,743 - lightrag - INFO - Creating table LIGHTRAG_FULL_RELATIONS
+2025-12-29 17:53:30,747 - lightrag - ERROR - PostgreSQL database,
+sql:CREATE TABLE LIGHTRAG_FULL_RELATIONS (
+                    id VARCHAR(255),
+                    workspace VARCHAR(255),
+                    relation_pairs JSONB,
+                    count INTEGER,
+                    create_time TIMESTAMP(0) DEFAULT CURRENT_TIMESTAMP,
+                    update_time TIMESTAMP(0) DEFAULT CURRENT_TIMESTAMP,
+                    CONSTRAINT LIGHTRAG_FULL_RELATIONS_PK PRIMARY KEY (workspace, id)
+                    ),
+data:None,
+error:relation "lightrag_full_relations" already exists
+2025-12-29 17:53:30,747 - lightrag - ERROR - Failed to create table LIGHTRAG_FULL_RELATIONS: relation "lightrag_full_relations" already exists
+2025-12-29 17:53:30,760 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_vdb_entity_models_text_embedding_004_768d_id on table LIGHTRAG_VDB_ENTITY_models_text_embedding_004_768d
+2025-12-29 17:53:30,765 - lightrag - INFO - PostgreSQL, Creating composite index idx_4de18ba27c5c_workspace_id on table LIGHTRAG_VDB_ENTITY_models_text_embedding_004_768d
+2025-12-29 17:53:30,770 - lightrag - INFO - PostgreSQL: New table 'LIGHTRAG_VDB_ENTITY_models_text_embedding_004_768d' created successfully
+2025-12-29 17:53:30,777 - lightrag - INFO - Creating HNSW index idx_4de18ba27c5c_hnsw_cosine on table LIGHTRAG_VDB_ENTITY_models_text_embedding_004_768d
+2025-12-29 17:53:30,782 - lightrag - INFO - Successfully created vector index idx_4de18ba27c5c_hnsw_cosine on table LIGHTRAG_VDB_ENTITY_models_text_embedding_004_768d
+2025-12-29 17:53:30,783 - lightrag - INFO - Ensure this new table creation is caused by new workspace setup and not an unexpected embedding model change.
+2025-12-29 17:53:30,791 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_vdb_relation_models_text_embedding_004_768d_id on table LIGHTRAG_VDB_RELATION_models_text_embedding_004_768d
+2025-12-29 17:53:30,795 - lightrag - INFO - PostgreSQL, Creating composite index idx_6497a62b2cef_workspace_id on table LIGHTRAG_VDB_RELATION_models_text_embedding_004_768d
+2025-12-29 17:53:30,802 - lightrag - INFO - PostgreSQL: New table 'LIGHTRAG_VDB_RELATION_models_text_embedding_004_768d' created successfully
+2025-12-29 17:53:30,810 - lightrag - INFO - Creating HNSW index idx_6497a62b2cef_hnsw_cosine on table LIGHTRAG_VDB_RELATION_models_text_embedding_004_768d
+2025-12-29 17:53:30,814 - lightrag - INFO - Successfully created vector index idx_6497a62b2cef_hnsw_cosine on table LIGHTRAG_VDB_RELATION_models_text_embedding_004_768d
+2025-12-29 17:53:30,815 - lightrag - INFO - Ensure this new table creation is caused by new workspace setup and not an unexpected embedding model change.
+2025-12-29 17:53:30,824 - lightrag - INFO - PostgreSQL, Creating index idx_lightrag_vdb_chunks_models_text_embedding_004_768d_id on table LIGHTRAG_VDB_CHUNKS_models_text_embedding_004_768d
+2025-12-29 17:53:30,828 - lightrag - INFO - PostgreSQL, Creating composite index idx_1a441001e49b_workspace_id on table LIGHTRAG_VDB_CHUNKS_models_text_embedding_004_768d
+2025-12-29 17:53:30,832 - lightrag - INFO - PostgreSQL: New table 'LIGHTRAG_VDB_CHUNKS_models_text_embedding_004_768d' created successfully
+2025-12-29 17:53:30,839 - lightrag - INFO - Creating HNSW index idx_1a441001e49b_hnsw_cosine on table LIGHTRAG_VDB_CHUNKS_models_text_embedding_004_768d
+2025-12-29 17:53:30,844 - lightrag - INFO - Successfully created vector index idx_1a441001e49b_hnsw_cosine on table LIGHTRAG_VDB_CHUNKS_models_text_embedding_004_768d
+2025-12-29 17:53:30,845 - lightrag - INFO - Ensure this new table creation is caused by new workspace setup and not an unexpected embedding model change.
+2025-12-29 17:53:30,846 - lightrag - INFO - [default] PostgreSQL Graph initialized: graph_name='chunk_entity_relation'
+2025-12-29 17:53:30,847 - lightrag - INFO - PostgreSQL, AGE extension enabled
+2025-12-29 17:53:31,206 - lightrag - INFO - Processing 1 document(s)
+2025-12-29 17:53:31,207 - lightrag - INFO - Extracting stage 1/1: unknown_source
+2025-12-29 17:53:31,209 - lightrag - INFO - Processing d-id: doc-1582e9c864c810fd5ab0ea5f80937fba
+2025-12-29 17:53:31,245 - lightrag - INFO - Embedding func: 4 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2025-12-29 17:53:31,637 - lightrag - INFO - LLM func: 2 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+2025-12-29 17:53:34,111 - lightrag - INFO -  == LLM cache == saving: default:extract:59affded78394f76dc7845d2f9e8ff51
+2025-12-29 17:53:34,223 - lightrag - INFO -  == LLM cache == saving: default:extract:096f78f8030985c91c3a47c7c98ecf8b
+2025-12-29 17:53:35,681 - lightrag - INFO -  == LLM cache == saving: default:extract:c81044e4077c8a0fa1651b78636a994a
+2025-12-29 17:53:35,693 - lightrag - INFO - Chunk 1 of 3 extracted 6 Ent + 3 Rel chunk-0cd948bd137424a0f070cfbf8207bcb9
+2025-12-29 17:53:35,898 - lightrag - INFO -  == LLM cache == saving: default:extract:229e58e208ed019a09e776efc9eebda6
+2025-12-29 17:53:35,909 - lightrag - INFO - Chunk 2 of 3 extracted 6 Ent + 5 Rel chunk-20ba271baeff158c04ef9f5b5b82bd3e
+2025-12-29 17:53:39,162 - lightrag - INFO -  == LLM cache == saving: default:extract:1216f983fa31a787ea87b8f668892f80
+2025-12-29 17:53:40,280 - lightrag - INFO -  == LLM cache == saving: default:extract:9002b955b03f230265240d4ca304ad83
+2025-12-29 17:53:40,289 - lightrag - INFO - Chunk 3 of 3 extracted 7 Ent + 6 Rel chunk-6a6089ab292b0bfb1b465f4b0befc768
+2025-12-29 17:53:40,291 - lightrag - INFO - Merging stage 1/1: unknown_source
+2025-12-29 17:53:40,291 - lightrag - INFO - Phase 1: Processing 13 entities from doc-1582e9c864c810fd5ab0ea5f80937fba (async: 4)
+2025-12-29 17:53:41,387 - lightrag - INFO - Phase 2: Processing 12 relations from doc-1582e9c864c810fd5ab0ea5f80937fba (async: 4)
+2025-12-29 17:53:43,105 - lightrag - INFO - Phase 3: Updating final 13(13+0) entities and  12 relations from doc-1582e9c864c810fd5ab0ea5f80937fba
+2025-12-29 17:53:43,113 - lightrag - INFO - Completed merging: 13 entities, 0 extra entities, 12 relations
+2025-12-29 17:53:43,118 - lightrag - INFO - In memory DB persist to disk
+2025-12-29 17:53:43,118 - lightrag - INFO - Completed processing file 1/1: unknown_source
+2025-12-29 17:53:43,119 - lightrag - INFO - Enqueued document processing pipeline stopped
+2025-12-29 17:53:43,302 - lightrag - INFO - Naive query: 3 chunks (chunk_top_k:20 cosine:0.2)
+2025-12-29 17:53:43,304 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-12-29 17:53:43,316 - lightrag - INFO - Final context: 3 chunks
+2025-12-29 17:53:44,343 - lightrag - INFO -  == LLM cache == saving: naive:query:787a85b0eba1b3d2259fd229baf699d6
+2025-12-29 17:53:45,478 - lightrag - INFO -  == LLM cache == saving: local:keywords:f3e883f04b60d95afc85c38fc70caaeb
+2025-12-29 17:53:45,653 - lightrag - INFO - Query nodes: Narrative analysis, Literary analysis (top_k:40, cosine:0.2)
+2025-12-29 17:53:45,891 - lightrag - INFO - Local query: 13 entites, 12 relations
+2025-12-29 17:53:45,891 - lightrag - INFO - Raw search results: 13 entities, 12 relations, 0 vector chunks
+2025-12-29 17:53:45,896 - lightrag - INFO - After truncation: 13 entities, 12 relations
+2025-12-29 17:53:45,901 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2025-12-29 17:53:45,904 - lightrag - INFO - Find no additional relations-related chunks from 12 relations
+2025-12-29 17:53:45,905 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2025-12-29 17:53:45,910 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-12-29 17:53:45,920 - lightrag - INFO - Final context: 13 entities, 12 relations, 3 chunks
+2025-12-29 17:53:45,921 - lightrag - INFO - Final chunks S+F/O: E6/1 E7/2 E6/3
+2025-12-29 17:53:46,828 - lightrag - INFO -  == LLM cache == saving: local:query:f777ab13ffdd7f07f69c915555468b1a
+2025-12-29 17:53:47,723 - lightrag - INFO -  == LLM cache == saving: global:keywords:f1b294722fc7fbfa6fecb01aca8685ec
+2025-12-29 17:53:47,913 - lightrag - INFO - Query edges: Themes (top_k:40, cosine:0.2)
+2025-12-29 17:53:48,150 - lightrag - INFO - Global query: 9 entites, 12 relations
+2025-12-29 17:53:48,150 - lightrag - INFO - Raw search results: 9 entities, 12 relations, 0 vector chunks
+2025-12-29 17:53:48,155 - lightrag - INFO - After truncation: 9 entities, 12 relations
+2025-12-29 17:53:48,159 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2025-12-29 17:53:48,162 - lightrag - INFO - Find no additional relations-related chunks from 12 relations
+2025-12-29 17:53:48,163 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2025-12-29 17:53:48,168 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-12-29 17:53:48,179 - lightrag - INFO - Final context: 9 entities, 12 relations, 3 chunks
+2025-12-29 17:53:48,180 - lightrag - INFO - Final chunks S+F/O: E5/1 E5/2 E5/3
+2025-12-29 17:53:49,186 - lightrag - INFO -  == LLM cache == saving: global:query:a77bb6e3d5649fbc3b7a2d4fb4893151
+2025-12-29 17:53:50,201 - lightrag - INFO -  == LLM cache == saving: hybrid:keywords:fa412d7b7f0785ebc86512e0bb3d0c99
+2025-12-29 17:53:50,383 - lightrag - INFO - Query nodes: Narrative, Plot, Characters (top_k:40, cosine:0.2)
+2025-12-29 17:53:50,677 - lightrag - INFO - Local query: 13 entites, 12 relations
+2025-12-29 17:53:50,677 - lightrag - INFO - Query edges: Story themes, Story analysis (top_k:40, cosine:0.2)
+2025-12-29 17:53:50,890 - lightrag - INFO - Global query: 9 entites, 12 relations
+2025-12-29 17:53:50,890 - lightrag - INFO - Raw search results: 13 entities, 12 relations, 0 vector chunks
+2025-12-29 17:53:50,893 - lightrag - INFO - After truncation: 13 entities, 12 relations
+2025-12-29 17:53:50,896 - lightrag - INFO - Selecting 3 from 3 entity-related chunks by vector similarity
+2025-12-29 17:53:50,899 - lightrag - INFO - Find no additional relations-related chunks from 12 relations
+2025-12-29 17:53:50,899 - lightrag - INFO - Round-robin merged chunks: 3 -> 3 (deduplicated 0)
+2025-12-29 17:53:50,907 - lightrag - WARNING - Rerank is enabled but no rerank model is configured. Please set up a rerank model or set enable_rerank=False in query parameters.
+2025-12-29 17:53:50,919 - lightrag - INFO - Final context: 13 entities, 12 relations, 3 chunks
+2025-12-29 17:53:50,920 - lightrag - INFO - Final chunks S+F/O: E6/1 E7/2 E6/3
+2025-12-29 17:53:52,795 - lightrag - INFO -  == LLM cache == saving: hybrid:query:c05547dbaa24402f9103e11015902ca6
+2025-12-29 17:53:52,805 - lightrag - INFO - Closed PostgreSQL database connection pool
+2025-12-29 17:53:52,806 - lightrag - INFO - Successfully finalized 12 storages
