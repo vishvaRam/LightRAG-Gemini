@@ -51,7 +51,10 @@ BOOK_FILE = "Data/book-small.txt"
 # LLM function (vLLM, OpenAI-compatible)
 # --------------------------------------------------
 
-async def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwargs) -> str:
+
+async def llm_model_func(
+    prompt, system_prompt=None, history_messages=[], **kwargs
+) -> str:
     return await openai_complete_if_cache(
         model=os.getenv("LLM_MODEL", "Qwen/Qwen3-14B-AWQ"),
         prompt=prompt,
@@ -62,6 +65,7 @@ async def llm_model_func(prompt, system_prompt=None, history_messages=[], **kwar
         timeout=600,
         **kwargs,
     )
+
 
 # --------------------------------------------------
 # Embedding function (vLLM)
@@ -101,14 +105,25 @@ jina_rerank_model_func = partial(
 # Initialize RAG
 # --------------------------------------------------
 
+
 async def initialize_rag():
     rag = LightRAG(
         working_dir=WORKING_DIR,
-
         llm_model_func=llm_model_func,
         embedding_func=vLLM_emb_func,
         rerank_model_func=jina_rerank_model_func,
-
+        llm_model_kwargs={
+            "temperature": 0.4,
+            "top_p": 1.0,
+            "presence_penalty": 2.0,
+            "max_completion_tokens": 8000,
+            # Use extra_body for params not in the standard OpenAI spec
+            "extra_body": {
+                "top_k": 40,
+                "repetition_penalty": 1.0,
+                "chat_template_kwargs": {"enable_thinking": False},
+            },
+        },
         # Storage backends (read from .env automatically)
         kv_storage="PGKVStorage",
         doc_status_storage="PGDocStatusStorage",
@@ -120,9 +135,11 @@ async def initialize_rag():
     await rag.initialize_storages()
     return rag
 
+
 # --------------------------------------------------
 # Main
 # --------------------------------------------------
+
 
 def main():
     # Validate book file exists
